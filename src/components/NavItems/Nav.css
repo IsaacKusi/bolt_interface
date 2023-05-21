@@ -1,0 +1,85 @@
+.middle-links {
+    width: 50%;
+    margin-right: 20%;
+ } 
+
+ .middle-links a{
+    text-decoration: none; 
+    color: black;
+    margin-left: 2px;
+    font-size: 14px;
+
+ }
+
+ .login-button{
+    background: #34d186;
+    height: 2%;
+    width: 5rem; 
+    padding: 4px;
+    font-size: small;
+  }
+  
+  .login-button:hover{
+    background-color: #68c095;
+  }
+ 
+  @media only screen and (max-width: 997px){
+    .middle-links a{
+         font-size: x-small;
+     }
+
+  }
+
+  @media only screen and (max-width: 767px){
+    .login-button {
+         margin-left: 45% ;
+     }  
+  }
+
+  @media only screen and (max-width: 383px){
+    .login-button {
+         margin-left: 20% ;
+     }
+
+  }
+
+  @media only screen and (min-width: 767px){
+    .mod-item:not(.show) {
+      display: none;
+    }
+  }
+
+.bar-fixed{
+    /* width: 4%;
+    height: 5%; */
+    padding: 0;
+    border: none;
+    
+}
+
+.bar-fixed-inner{
+    width:1.5rem;
+}
+
+.mod-item{
+  top:11.5%;
+  left: 35%;
+  z-index:1; 
+  background-color: #4450d5;
+}
+
+.mod-item a{
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+
+ 
