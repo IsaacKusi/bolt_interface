@@ -12,8 +12,8 @@ const Body = () => {
         setEmailErrorColor, setDialCodeErrorColor, setPhoneErrorColor, setPhone, setEmail } = useContext<any>(DataContext)
 
 
-    const formHandler = () => {
-
+    const formHandler = (e: React.SyntheticEvent):void => {
+            e.preventDefault()
         if (email === '' && phone === '') {
             setShowEmailError(true)
             setPhoneError(true)
@@ -72,7 +72,7 @@ const Body = () => {
                         <p className='text-white mt-5  body-para-learn '>LEARN MORE <FaAngleDown className='fa-angle border border-white rounded-circle' /></p>
                     </div>
                 </div>
-                <form className='border bg-white body-form shadow-sm p-2' onSubmit={formHandler}>
+                <form className='border bg-white body-form shadow-sm p-2' onSubmit= {formHandler}>
                     <h6 className=''>Become a Bolt driver</h6>
                     <p className='body-form-p fw-bold'>If you have multiple cars or drivers <a href='###' className='body-form-a text-decoration-none'>sign up as a fleet owner</a></p>
                     <FormItems />
