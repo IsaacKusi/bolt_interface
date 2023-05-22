@@ -68,9 +68,9 @@ const FormItems = () => {
             <div className="d-flex justify-content-between mt-3" >
                 <input type="checkbox" className="body-form-check" checked={isChecked} onChange={()=>setIsChecked(!isChecked)}/>
                 <p className="form-input-p d-inline fw-bold ">
-                    <span style={{color:`${checkErrorColor}`}}>I agree to Bolt's</span> <span className="terms-service">
+                    <span style={{color:`${checkErrorColor}`}}>I agree to Bolt's</span> <a href="###" className="terms-service text-decoration-none">
                         Terms of Service
-                        </span><span style={{color:`${checkErrorColor}`}}> and</span> <span className="terms-service">Privacy Policy</span></p>
+                        </a><span style={{color:`${checkErrorColor}`}}> and</span> <a href="###" className="terms-service text-decoration-none">Privacy Policy</a></p>
             </div>
             <button className=' btn btn-primary text-white text-center fw-bold rounded-pill mt-3 mb-3 sign-up'>SIGN UP AS A DRIVER</button>
         </div>
