@@ -13,7 +13,6 @@ const FormItems = () => {
             fetch('https://countriesnow.space/api/v0.1/countries/codes')
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data.data)
                     setDialCodes(data.data)
                 })
         } catch (err) {
@@ -26,7 +25,6 @@ const FormItems = () => {
             fetch('https://countriesnow.space/api/v0.1/countries/capital')
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data.data)
                     setCities(data.data)
                 })
         } catch (err) {
@@ -68,7 +66,7 @@ const FormItems = () => {
                 </select>
             </div>
             <div className="d-flex justify-content-between mt-3" >
-                <input type="checkbox" className="body-form-check" checked={isChecked} onClick={()=>setIsChecked(!isChecked)}/>
+                <input type="checkbox" className="body-form-check" checked={isChecked} onChange={()=>setIsChecked(!isChecked)}/>
                 <p className="form-input-p d-inline fw-bold ">
                     <span style={{color:`${checkErrorColor}`}}>I agree to Bolt's</span> <span className="terms-service">
                         Terms of Service

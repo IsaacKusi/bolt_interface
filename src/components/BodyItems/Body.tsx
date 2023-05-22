@@ -9,7 +9,7 @@ import './Body.css'
 const Body = () => {
 
     const { setPhoneError, setShowEmailError, email, phone, setCheckErrorColor,isChecked,
-        setEmailErrorColor, setDialCodeErrorColor, setPhoneErrorColor } = useContext<any>(DataContext)
+        setEmailErrorColor, setDialCodeErrorColor, setPhoneErrorColor, setPhone, setEmail } = useContext<any>(DataContext)
 
 
     const formHandler = () => {
@@ -55,6 +55,11 @@ const Body = () => {
                 setCheckErrorColor('')
             }, 2000)
         }
+
+        //clear defaults
+
+        setPhone('')
+        setEmail('')
 
     }
     return <>
