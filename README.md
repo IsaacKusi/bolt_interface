@@ -1,4 +1,4 @@
-Responsive One-Page Application : 
+Responsive One-Page Bolt-Interface : 
 This is a responsive one-page application that can be used on all devices. It provides a seamless and optimized user experience across desktop, tablet, and mobile devices. The application is designed to adapt its layout and functionality based on the screen size and capabilities of the device being used.
 
 Features :
